@@ -30,9 +30,7 @@ body {
 body {
   font-family: "Manrope", "Segoe UI", sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at 94% 12%, rgba(120, 55, 70, 0.08), transparent 26%),
-    linear-gradient(160deg, var(--paper) 0%, #f3efe7 45%, var(--paper-2) 100%);
+  background: #fff;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -61,8 +59,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(9px);
-  background: rgba(250, 248, 244, 0.95);
+  background: #fff;
   border-bottom: 3px solid var(--wine);
 }
 
@@ -580,8 +577,8 @@ a {
 
 /* Refined editorial layout */
 .site-header {
-  background: rgba(248, 247, 243, 0.97);
-  border-bottom: 1px solid #d8d0c2;
+  background: #fff;
+  border-bottom: 1px solid #e3e7e9;
 }
 
 .navbar {
@@ -757,7 +754,7 @@ a {
 }
 
 .practice-section {
-  background: #f8f7f3;
+  background: #fff;
 }
 
 .section-heading {
@@ -878,7 +875,7 @@ a {
 }
 
 .contact-section {
-  background: #ebe5da;
+  background: #fff;
   scroll-margin-top: 6.5rem;
 }
 
@@ -935,7 +932,7 @@ a {
 }
 
 .page-hero {
-  background: #e7e1d6;
+  background: #fff;
   border-bottom: 1px solid #d4c9b9;
   padding: clamp(3.5rem, 6vw, 5.5rem) 0;
 }
@@ -1016,7 +1013,7 @@ a {
 
 @media (max-width: 820px) {
   .nav-links {
-    background: #f8f7f3;
+    background: #fff;
     gap: 0;
     padding: 0.55rem 0;
   }
@@ -1127,7 +1124,7 @@ a {
 }
 
 .team-section {
-  background: #f8f7f3;
+  background: #fff;
 }
 
 .team-section .owner-card:nth-child(even) .owner-content {
@@ -1136,7 +1133,7 @@ a {
 
 .team-section .owner-grid {
   column-gap: 4rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 0;
   row-gap: 2.75rem;
 }
@@ -1157,16 +1154,10 @@ a {
   position: relative;
 }
 
-.owner-index {
-  color: var(--wine);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
 .team-section .owner-content h3 {
-  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-size: clamp(1.65rem, 1.8vw, 2rem);
   margin-top: 1.75rem;
+  white-space: nowrap;
 }
 
 .team-section .owner-role {
@@ -1176,7 +1167,7 @@ a {
 .privacy-section {
   background:
     linear-gradient(90deg, rgba(16, 40, 59, 0.05) 1px, transparent 1px),
-    #f8f7f3;
+    #fff;
   background-size: 4rem 4rem;
 }
 
