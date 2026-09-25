@@ -9,6 +9,8 @@
   --paper-2: #ebe5db;
   --gold: #b58b4b;
   --gold-soft: #d4c39b;
+  --site-rule: rgba(240, 213, 158, 0.75);
+  --site-rule-width: 4px;
   --line: #c9b99f;
   --text: #24313d;
   --text-soft: #4d5a68;
@@ -578,7 +580,7 @@ a {
 /* Refined editorial layout */
 .site-header {
   background: #fff;
-  border-bottom: 1px solid #e3e7e9;
+  border-bottom: var(--site-rule-width) solid var(--site-rule);
 }
 
 .navbar {
@@ -593,6 +595,7 @@ a {
 .brand-kicker {
   color: var(--gold);
   font-size: 0.78rem;
+  font-weight: 800;
   letter-spacing: 0.18em;
 }
 
@@ -640,8 +643,8 @@ a {
 }
 
 .hero-grid::before {
-  border-bottom: 4px solid rgba(240, 213, 158, 0.75);
-  border-top: 4px solid rgba(240, 213, 158, 0.75);
+  border-bottom: var(--site-rule-width) solid var(--site-rule);
+  border-top: var(--site-rule-width) solid var(--site-rule);
   content: "";
   bottom: calc(1.1rem - 1cm);
   left: 50%;
@@ -805,7 +808,7 @@ a {
   background: transparent;
   border: 0;
   border-radius: 0;
-  border-top: 1px solid #d6d0c4;
+  border-top: var(--site-rule-width) solid var(--site-rule);
   box-shadow: none;
   padding: 1.35rem 0 1.45rem;
 }
@@ -830,9 +833,9 @@ a {
 
 .cta-band {
   background: transparent;
-  border-bottom: 1px solid #d6d0c4;
+  border-bottom: var(--site-rule-width) solid var(--site-rule);
   border-radius: 0;
-  border-top: 1px solid #d6d0c4;
+  border-top: var(--site-rule-width) solid var(--site-rule);
   color: var(--ink);
   margin-top: 2rem;
   padding: 1.35rem 0;
@@ -881,7 +884,7 @@ a {
 }
 
 .assurance-details {
-  border-left: 1px solid rgba(240, 213, 158, 0.64);
+  border-left: var(--site-rule-width) solid var(--site-rule);
   padding-left: 1.5rem;
 }
 
@@ -907,7 +910,7 @@ a {
   background: transparent;
   border: 0;
   border-left: 0;
-  border-top: 2px solid var(--wine);
+  border-top: var(--site-rule-width) solid var(--site-rule);
   border-radius: 0;
   display: grid;
   gap: 0;
@@ -916,7 +919,7 @@ a {
 }
 
 .contact-card div {
-  border-left: 1px solid #cfc3b0;
+  border-left: var(--site-rule-width) solid var(--site-rule);
   min-width: 0;
   padding: 0 1.25rem;
 }
@@ -953,7 +956,7 @@ a {
 
 .page-hero {
   background: #fff;
-  border-bottom: 1px solid #d4c9b9;
+  border-bottom: var(--site-rule-width) solid var(--site-rule);
   padding: clamp(3.5rem, 6vw, 5.5rem) 0;
 }
 
@@ -975,7 +978,7 @@ a {
 }
 
 .owner-content {
-  border-top: 3px solid var(--wine);
+  border-top: var(--site-rule-width) solid var(--site-rule);
   padding: 1.35rem 0 0;
 }
 
@@ -991,7 +994,7 @@ a {
 
 .site-footer {
   background: #10283b;
-  border-top: 3px solid var(--gold);
+  border-top: var(--site-rule-width) solid var(--site-rule);
   margin-top: 0;
 }
 
@@ -1083,7 +1086,7 @@ a {
   .contact-card div,
   .contact-card div:first-child,
   .contact-card div:nth-child(3) {
-    border-bottom: 1px solid #cfc3b0;
+    border-bottom: var(--site-rule-width) solid var(--site-rule);
     border-left: 0;
     padding: 0.95rem 0;
   }
@@ -1148,7 +1151,7 @@ a {
 }
 
 .team-section .owner-card:nth-child(even) .owner-content {
-  border-top-color: var(--ink-2);
+  border-top-color: var(--site-rule);
 }
 
 .team-section .owner-grid {
@@ -1168,8 +1171,8 @@ a {
 }
 
 .team-section .owner-content {
-  border-top-color: var(--gold);
-  margin-top: 1.2rem;
+  border-top-color: var(--site-rule);
+  margin-top: 0;
   min-height: 17rem;
   position: relative;
 }
@@ -1196,7 +1199,7 @@ a {
 }
 
 .privacy-aside {
-  border-top: 3px solid var(--wine);
+  border-top: var(--site-rule-width) solid var(--site-rule);
   padding-top: 1.2rem;
   position: sticky;
   top: 7.5rem;
@@ -1234,13 +1237,13 @@ a {
 }
 
 .privacy-notice {
-  border-top: 1px solid #d6d0c4;
+  border-top: var(--site-rule-width) solid var(--site-rule);
 }
 
 .privacy-notice .gdpr-box {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #d6d0c4;
+  border-bottom: var(--site-rule-width) solid var(--site-rule);
   box-shadow: none;
   margin: 0;
   padding: 1.65rem 0 1.75rem;
@@ -1292,7 +1295,7 @@ a {
   }
 
   .team-section .owner-content {
-    margin-top: 1.2rem;
+    margin-top: 0;
     min-height: auto;
   }
 }
