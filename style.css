@@ -1035,6 +1035,10 @@ a {
   margin: 1.25rem 0 0;
 }
 
+.page-hero .eyebrow {
+  color: var(--gold);
+}
+
 .owner-card {
   border: 0;
   border-radius: 0;
